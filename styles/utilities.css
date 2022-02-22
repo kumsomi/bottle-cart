@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    font-family:sans-serif;
+    font-size:62.5%;
+
+
+    /* border radius*/
+    --border-radius-s:0.125rem;
+    --border-radius-m:0.25rem;
+    --border-radius-l:0.5rem;
+    --border-radius-xl:1rem;
+    --border-radius-circle:50%;
+
+
+    /* colors */
+
+    --primary-color:#07529D;
+    --cta-color:#ADDAF2;
+
+    --screen-background-color:#ECF8FD;
+    --shadow-color:#ADDAF2;
+    --secondary-color:#ffffff;
+    --other-color:#8ab0ab;
+    --black:#020202;
+    /* --white:; */
+
+
+    /* Alerts */
+    --success-background-color: lightgreen;
+	--success-color: darkgreen;
+	--error-background-color: lightcoral;
+	--error-color: darkred;
+	--warning-background-color: lightyellow;
+	--warning-color: darkgoldenrod;
+	--info-background-color: skyblue;
+	--info-color: darkblue;
+
+
+    /* Avatars */
+	--online-badge-color: green;
+	--away-badge-color: yellow;
+	--busy-badge-color: red;
+
+    /* Inputs */
+	--valid-color: green;
+	--invalid-color: red;
+
+}
