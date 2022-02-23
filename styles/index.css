@@ -1,5 +1,11 @@
 @import "utilities.css";
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,600;0,700;0,800;0,900;1,500&family=Roboto+Serif:ital,wght@0,100;0,300;1,100;1,200&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Serif', sans-serif;
+}
 .header {
     display: flex;
     /* justify-content: space-between;*/
@@ -7,9 +13,11 @@
     color:var(--primary-color);
     align-items: center;
     flex-wrap: wrap;
-    padding: 0.2rem;
+    /* padding: 0.2rem; */
     font-size:2rem;
     font-weight: bolder;
+    box-shadow: 0.1rem 0.1rem 0.9rem var(--primary-color);
+    z-index: 10000;
   }
   .header_nav {
     margin-left: auto;
@@ -19,6 +27,12 @@
     align-items: center;
     /* font-size: ; */
   }
+  .logo a{
+      margin: 2rem;
+      font-weight: 900;
+      font-size: 4rem;
+      color:var(--primary-color)
+  }
   .user {
     display: flex;
     align-items: center;
@@ -27,17 +41,11 @@
   .header_nav a {
     padding: 10px;
   }
-  .no-link{
+  .header_nav .no-link{
       color:var(--primary-color);
       font-size: 2rem;
   }
-  .img {
-    /* height: fit-content; */
-    
-    /* border-radius: 50%; */
-    /* background-color: white; */
-    /* margin-left: 10px; */
-  }
+  
   .home-text{
       /* margin: 5rem; */
       font-size: 2rem;
@@ -46,50 +54,167 @@
       padding: 2rem;
       /* background-color: ; */
   }
-  .grid-box{
-      margin:10rem;
-      grid-gap:10px;
-  }
-  .img-square{
-      width:100%;
-      height:auto;
-  }
 
-.grid-home{
-    grid-gap:20rem;
+.main-head .background-image{
+    width:100%;
+    height:auto;
+    border-radius: 0 0 1rem 1rem;
+}
+.main-head .contents{
+    position: absolute;
+    top: 400px;
+    left: 16px;
+}
+.outline-btn{
+    background: var(--cta-color);
+}
+.outline-btn:hover{
+    transform: translate(-0.2rem, -0.2rem);
 
 }
+.main-head .contents h1{
+    opacity:100%;
+}
+.img-square{
+      width:100%;
+      height:100%;
+  }
+.badge-text{
+    padding: 1rem;
+    /* font-size: 1.5rem; */
+}
+
+.badge-container{
+    gap:0;
+}
+
+.header_nav li{
+    height: fit-content;
+    margin:0 1rem;
+    /* padding:0; */
+}
+.icon-cover:hover{
+    justify-content: center;
+    align-items: center;
+    background-color: var(--shadow-color);
+    padding:0.5rem;
+    border-radius: 1rem;
+    border-color: var(--primary-color);
+}
+
+.footer{
+    justify-content: space-between;
+    background-color: var(--cta-color);
+    padding: 3rem;
+    width:100%;
+}
+
+/* .{
+    display: grid;
+    grid-gap:2rem;
+    padding: 5rem;
+    background-color: var(--shadow-color);
+    border-radius: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    grid-template-areas: "left right";
+}
+.left{
+    grid-area:left;
+    text-align: right;
+}
+.right{
+    grid-area:"right";
+}*/
+
+/* for tablet screens */
+/*
+@media only screen and(max-width: 900px){
+    
+    .{
+        display: grid;
+        padding: 0.1rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'left'
+        'right';
+    }
+    .left{
+        grid-area: left;
+    }
+    .right{
+        grid-area: right;
+    }
+    .grid-box{
+        margin: 0;
+    }
+} */
 
   
-.grid-container{
+ /* .grid-container{
     display:grid;
-    /* height:100vh; */
+    height:100vh;
     grid-gap:10px; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "header header header header header"
-        "nav main main main aside"
-        "nav main main main aside"
-        "nav main main main aside"
-        "nav main main main aside"
-        "nav main main main aside"
-        "footer footer footer footer footer"
+        "nav main main main main"
+        "nav main main main main"
+        "nav main main main main"
+        "nav main main main main"
+        "nav main main main main"
+        "footer footer footer footer footer";
 }
 header{
     grid-area:header;
     display: flex;
     justify-content: space-between; 
 }
-aside{
-    grid-area:aside;
-}
 nav{
     grid-area: nav;
 }
 main{
     grid-area: main;
-}
-footer{
+} */
+/* footer{
     grid-area:footer;
-}
+} */
+
+/* for tablet screens */
+/* @media only screen and(max-width: 900px){
+    .grid-container{
+        display:grid;
+        height:100vh;
+        grid-gap:10px; 
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "nav main main "
+            "nav main main"
+            "nav main main"
+            "nav main main"
+            "nav main main"
+            "footer footer footer"
+    }
+    header{
+        grid-area:header;
+        display: flex;
+        justify-content: space-between; 
+    }
+    aside{
+        grid-area:aside;
+    }
+    nav{
+        grid-area: nav;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area:footer;
+    }
+    
+}  */

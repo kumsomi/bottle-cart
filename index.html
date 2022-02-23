@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BottleCart</title>
+    <title>BottleCart | Home</title>
     <!-- to put the brand icon in the title -->
     <link rel="icon" href="asset/bottle1.jpeg" type="image/icon type">
 
@@ -21,56 +21,109 @@
 
 <body>
     <header class="header">
-        <div class="logo">BottleCart</div>
+        <div class="logo"><a class="no-link" href="../index.html">BottleCart</a> </div>
+
         <div class="header_nav fs-l">
             <nav>
-                <ul class="no-bullet spaced-list">
-                    <li><a class="no-link fas-fa-heart" href="#"><i class="fas fa-heart"></i></a></li>
-                    <li><a class="no-link fas-fa-shopping-cart" href="#"><span class="fas fa-shopping-cart"></span></a></li>
-                    <!-- <li><a class="no-link" href="#"></a></li> -->
+                <ul class="no-bullet spaced-list ">
+                    <li>
+                        <a class="no-link" href="pages/wishlist.html">
+                            <div class="badge">
+                                <span class="badge-icon"><i class="icon-cover fas fa-heart"></i></span>
+                                <p class="badge-text top right">3</p>
+                              </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="no-link" href="pages/cart.html">
+                            <div class="badge">
+                                <span class="badge-icon"><i class="icon-cover fas fa-shopping-cart"></i></span>
+                                <p class="badge-text top right">4</p>
+                              </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="no-link" href="pages/authentication.html">
+                            <div class="badge">
+                                <span class="badge-icon"><i class="icon-cover fas fa-user"></i></span>
+                                <!-- <p class="badge-text top right">24</p> -->
+                              </div>
+                        </a>
+                    </li>
                 </ul>
             </nav>
-            <a href="#" class="no-link user">
-                <!-- they are different lines hence use display:flex -->
-                <span class="fas fa-user icon-btn"></span>
-                <!-- <div class="img"></div> -->
-            </a>
         </div>
     </header>
     <main>
-        <div class="grid-box">
-            <div class="grid-home grid grid-cols-2">
-                <div class="img-container flex align-i-ctr justify-c-ctr">
-                    <img class="img img-square" src="asset/background.jfif" alt="background image">
-                </div>
-                <div class="home-text flex align-i-ctr justify-c-ctr">
-                    <h2 class="flex flex-wrap">Bottle Cart lets you rejoice your story.</h2>
-                    <h3 class="flex flex-wrap"> As every empty bottle is filled with new stories.</h3>
-                </div>
 
-
-                <div class="home-text flex align-i-ctr justify-c-ctr">
-                    <h2 class="flex flex-wrap">Bottle Cart lets you rejoice your story.</h2>
-                    <h3 class="flex flex-wrap"> As every empty bottle is filled with new stories.</h3>
-                </div>
-                <div class="img-container flex align-i-ctr justify-c-ctr">
-                    <img class="img img-square" src="asset/background.jfif" alt="background image">
-                </div>
-                <div class="img-container flex align-i-ctr justify-c-ctr">
-                    <img class="img img-square" src="asset/background.jfif" alt="background image">
-                </div>
-                <div class="home-text flex align-i-ctr justify-c-ctr">
-                    <h2 class="flex flex-wrap">Bottle Cart lets you rejoice your story.</h2>
-                    <h3 class="flex flex-wrap"> As every empty bottle is filled with new stories.</h3>
-                </div>
-                
-
-
-
+        <div class="main-head ">
+            <img class="background-image" src="asset/bottle background.jpg" alt="bottle background">
+            <div class="contents">
+                <h1 class="h-2">Get your bottles from BottleCart</h1>
+                <p class="para-3">Save 10% on every purchase</p>
+                <a href="pages/products.html">
+                    <button class="btn outline-btn">Shop now</button>
+                </a>
             </div>
+            
         </div>
+        <!-- <div class="grid-box">
+            
+            <div class="grid-home ">
+                <div class="divcon">
+                <div class="left img-container flex flex-wrap align-i-ctr justify-c-ctr">
+                    <img class="img img-square" src="asset/background.jfif" alt="background image">
+                </div>
+                <div class="right home-text flex flex-wrap align-i-ctr justify-c-ctr">
+                    <h2 class="flex flex-wrap">1 Bottle Cart lets you rejoice your story.</h2>
+                    <h3 class="flex flex-wrap"> As every empty bottle is filled with new stories.</h3>
+                </div>
+            </div>
+
+                <div class="divcon">
+                <div class="left home-text flex align-i-ctr justify-c-ctr">
+                    <h2 class="flex flex-wrap">2 Bottle Cart lets you rejoice your story.</h2>
+                    <h3 class="flex flex-wrap"> As every empty bottle is filled with new stories.</h3>
+                </div>
+                <div class=" right img-container flex align-i-ctr justify-c-ctr">
+                    <img class="img img-square" src="asset/bottle background.jpg" alt="background image">
+                </div>
+            </div>
+            <div class="divcon"></div>
+                <div class="left img-container flex align-i-ctr justify-c-ctr">
+                    <img class="img img-square" src="asset/bottle1.jpeg" alt="background image">
+                </div>
+                <div class="right home-text flex align-i-ctr justify-c-ctr">
+                    <h2 class="flex flex-wrap">3 Bottle Cart lets you rejoice your story.</h2>
+                    <h3 class="flex flex-wrap"> As every empty bottle is filled with new stories.</h3>
+                </div>
+            </div>
+        </div> -->
         </div>
     </main>
+    <footer class="footer flex flex-direction-row flex-wrap">
+        <div>
+            <h2 class="h-1">BottleCart</h2>
+            <p1 class="para-3">Lets you take your water along.</p1>
+        </div>
+        <div class="categories">
+            <h3 class="h-3">Categories</h3>
+            <p class="para-4">Glass Bottles</p>
+            <p class="para-4">Plastic Bottles</p>
+            <p class="para-4">Stainless steel Bottles</p>
+            <p class="para-4">Aluminium Bottles</p>
+        </div>
+        <div class="address">
+            <h4 class="h-3">Contact us</h4> 
+            <p class="para-4">A-Block 245/7 </p>
+            <p class="para-4">New Town Yelahanka</p>
+            <p class="para-4">Bangalore, India</p>
+
+        </div>
+       
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BottleCart | Cart</title> <!-- to put the brand icon in the title -->
+    <link rel="icon" href="../asset/bottle1.jpeg" type="image/icon type">
+
+    <!-- Font awesome line of version 5.1 -->
+    <script src="https://kit.fontawesome.com/ca89be07d8.js" crossorigin="anonymous"></script>
+
+    <!-- Connecting to the bubble-ui styles -->
+    <link rel="stylesheet" href="https://bubble-ui.netlify.app/styles/component.css">
+
+    <!-- Connecting to its own styles -->
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/cart.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="logo"><a class="no-link" href="../index.html">BottleCart</a> </div>
+            <div class="header_nav fs-l">
+                <nav>
+                    <ul class="no-bullet spaced-list ">
+                        <li>
+                            <a class="no-link" href="wishlist.html">
+                                <div class="badge">
+                                    <span class="badge-icon"><i class="icon-cover fas fa-heart"></i></span>
+                                    <p class="badge-text top right">3</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="no-link" href="cart.html">
+                                <div class="badge">
+                                    <span class="badge-icon"><i class="icon-cover fas fa-shopping-cart"></i></span>
+                                    <p class="badge-text top right">4</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="no-link" href="authentication.html">
+                                <div class="badge">
+                                    <span class="badge-icon"><i class="icon-cover fas fa-user"></i></span>
+                                    <!-- <p class="badge-text top right">24</p> -->
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h2 class="main-heading h-3 flex ">My Cart</h2>
+        <p class="para-4 main-subheading">
+            Cart has total 2 items.
+        </p>
+            <div class="shop grid grid-cols-2">
+                <div class="products flex flex-wrap">
+                    <article class="card horizontal card-shadow">
+                        <!-- Card image -->
+                        <div class="horizontal-card-img--container flex-jc-ac">
+                          <img src="../asset/bottle1.jpeg" alt="coffee cup" class="horizontal-card-img" />
+                        </div>
+                    
+                        <!-- Horizontal card container -->
+                        <div class="horizontal-card-text--container">
+                          
+                          <!--Card heading  -->
+                          <p>Milton</p>
+                          <h1 class="horizontal-card-heading">Glass Bottle</h1>
+                    
+                          <!-- Price tag -->
+                          <span class="card-price-tag">
+                            <p>Rs 699</p>
+                          </span>
+                    
+                    
+                          <!-- card details-->
+                          <div class="horizontal-card-details-container">
+                            
+                            <!-- Product description -->
+                            <h3>Description</h3>
+                            <div >
+                              <section class="description">
+                                <ul>
+                                    <li>Made in India.</li>
+                                    <li>Glass bottle </li>
+                                    <li>Travel friendly</li>
+                                    <li>Environment friendly</li>
+                                    <li>Measurements: height:20cm, Volume: 35cl</li>
+                                </ul>
+                              </section>
+                            </div>
+                    
+                            <!-- card and wishlist buttons -->
+                            <div class="horizontal-card-btn-container flex-ac">
+                              <!-- <button class="card-btn card-cart horizintal-card-btn-primary">
+                                <span class="cart-icon "><i class="fas fa-shopping-cart"></i></span>
+                                <p class="cart-text">Add to Cart</p>
+                              </button> -->
+                              <button class="card-btn horizontal-card-btn-secondary">
+                                <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                                <p class="wishlist-text">Add to wishlist</p>
+                              </button>
+                            </div>
+                    
+                          </div>
+                        </div>
+                      </article>
+
+                      <article class="card horizontal card-shadow">
+                        <!-- Card image -->
+                        <div class="horizontal-card-img--container flex-jc-ac">
+                          <img src="../asset/bottle1.jpeg" alt="coffee cup" class="horizontal-card-img" />
+                        </div>
+                    
+                        <!-- Horizontal card container -->
+                        <div class="horizontal-card-text--container">
+                          
+                          <!--Card heading  -->
+                          <p>Milton</p>
+                          <h1 class="horizontal-card-heading">Glass Bottle</h1>
+                    
+                          <!-- Price tag -->
+                          <span class="card-price-tag">
+                            <p>Rs 699</p>
+                          </span>
+                    
+                    
+                          <!-- card details-->
+                          <div class="horizontal-card-details-container">
+                            
+                            <!-- Product description -->
+                            <h3>Description</h3>
+                            <div >
+                              <section class="description">
+                                <ul>
+                                  <li>Made in India.</li>
+                                  <li>Glass bottle </li>
+                                  <li>Travel friendly</li>
+                                  <li>Environment friendly</li>
+                                  <li>Measurements: height:20cm, Volume: 35cl</li>
+                                </ul>
+                              </section>
+                            </div>
+                    
+                            <!-- card and wishlist buttons -->
+                            <div class="horizontal-card-btn-container flex-ac">
+                              <!-- <button class="card-btn card-cart horizintal-card-btn-primary">
+                                <span class="cart-icon "><i class="fas fa-shopping-cart"></i></span>
+                                <p class="cart-text">Add to Cart</p>
+                              </button> -->
+                              <button class="card-btn horizontal-card-btn-secondary">
+                                <span class="wishlist-icon"><i class="far fa-heart"></i></span>
+                                <p class="wishlist-text">Add to wishlist</p>
+                              </button>
+                            </div>
+                    
+                          </div>
+                        </div>
+                      </article>
+                    
+                    
+
+                </div>
+                <div id="cart" class="cart-side">
+                    <div class="filters flex flex-direction-col">
+                        <h3 class="h-4">Estimate Shipping & tax</h3>
+                        <div class="flex flex-direction-row">
+                            <label class="para-4 label-group container"></label>
+                            <input class="input flex " type="checkbox" ><span class="input-text">Store pickup</span>
+                        </div>
+                        
+                        
+                        <label class="para-4 label-group container" for="State"></label>
+                        <select name="country" id="State">
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="West Bengal">West Bengal</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                        </select>
+                        
+                        <div class="flex flex-dirextion-row">
+                            <label class="para-4 label-group container">ZipCode</label>
+                            <input class="inputbox default flex " type="text" >
+                        </div> 
+                    </div>
+                    <div class="filters flex flex-direction-col">
+                        <div class="cart-total flex flex-direction-col">
+                            <div class="total flex flex-direction-row">
+                                <h4 class="h-4">Subtotal</h4>
+                                <h4 class="h-4">Rs 699</h4>
+                            </div>
+                            <div class="total flex flex-direction-row">
+                                <p class="para-4">Shipping</p>
+                                <p class="para-4">Calculate Above</p>
+                            </div>
+                            <div class="total flex flex-direction-row">
+                                <p class="para-4">Sales Taxes</p>
+                                <p class="para-4">Calculate Above</p>
+                            </div>
+                            <div class="grand total flex flex-direction-row">
+                                <h4 class="h-4">Total</h4>
+                                <h4 class="h-4">Rs 1400</h4>
+                            </div>
+                            <div class="total-button flex flex-direction-row">
+                                <button class="btn outline-btn icon-text-btn"> 
+                                    <i class="fas fa-lock"></i>
+                                    Begin Checkout
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <h3 class="h-3">Rating</h3> -->
+
+                </div>
+        </main>
+
+
+        <footer class="footer flex flex-direction-row flex-wrap">
+            <div>
+                <h2 class="h-1">BottleCart</h2>
+                <p1 class="para-3">Lets you take your water along.</p1>
+            </div>
+            <div class="categories">
+                <h3 class="h-3">Categories</h3>
+                <p class="para-4">Glass Bottles</p>
+                <p class="para-4">Plastic Bottles</p>
+                <p class="para-4">Stainless steel Bottles</p>
+                <p class="para-4">Aluminium Bottles</p>
+            </div>
+            <div class="address">
+                <h4 class="h-3">Contact us</h4>
+                <p class="para-4">A-Block 245/7 </p>
+                <p class="para-4">New Town Yelahanka</p>
+                <p class="para-4">Bangalore, India</p>
+
+            </div>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BottleCart | Cart</title> <!-- to put the brand icon in the title -->
+    <link rel="icon" href="../asset/bottle1.jpeg" type="image/icon type">
+
+    <!-- Font awesome line of version 5.1 -->
+    <script src="https://kit.fontawesome.com/ca89be07d8.js" crossorigin="anonymous"></script>
+
+    <!-- Connecting to the bubble-ui styles -->
+    <link rel="stylesheet" href="https://bubble-ui.netlify.app/styles/component.css">
+
+    <!-- Connecting to its own styles -->
+    <link rel="stylesheet" href="../styles/authentication.css">
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a class="no-link" href="../index.html">BottleCart</a> </div>
+    <div class="header_nav fs-l">
+        <nav>
+            <ul class="no-bullet spaced-list ">
+                <li>
+                    <a class="no-link" href="wishlist.html">
+                        <div class="badge">
+                            <span class="badge-icon"><i class="icon-cover fas fa-heart"></i></span>
+                            <p class="badge-text top right">3</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="no-link" href="cart.html">
+                        <div class="badge">
+                            <span class="badge-icon"><i class="icon-cover fas fa-shopping-cart"></i></span>
+                            <p class="badge-text top right">4</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="no-link" href="authentication.html">
+                        <div class="badge">
+                            <span class="badge-icon"><i class="icon-cover fas fa-user"></i></span>
+                            <!-- <p class="badge-text top right">24</p> -->
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <main>
+      <div class="container" id="container">
+        <div class="form-container sign-up-container">
+          <form action="#">
+            <h1>Create Account</h1>
+            <div class="social-container">
+              <a href="#" class="no-link social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="no-link social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="no-link social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>or use your email for registration</span>
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <button class="btn outline-btn">Sign Up</button>
+          </form>
+        </div>
+        <div class="form-container sign-in-container">
+          <form action="#">
+            <h1>Sign in</h1>
+            <div class="social-container">
+              <a href="#" class="no-link social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="no-link social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="no-link social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>or use your account</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a class="no-link" href="#">Forgot  your password?</a>
+            <button class="btn outline-btn">Sign In</button>
+          </form>
+        </div>
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <button class=" btn outline-btn ghost" id="signIn">Sign In</button>
+              
+            </div>
+            <div class="overlay-panel overlay-right">
+
+              <button class="btn outline-btn ghost" id="signUp">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <script src="../script/authentication.js"></script>
+    </main>
+
+    <footer class="footer flex flex-direction-row flex-wrap">
+      <div>
+          <h2 class="h-1">BottleCart</h2>
+          <p1 class="para-3">Lets you take your water along.</p1>
+      </div>
+      <div class="categories">
+          <h3 class="h-3">Categories</h3>
+          <p class="para-4">Glass Bottles</p>
+          <p class="para-4">Plastic Bottles</p>
+          <p class="para-4">Stainless steel Bottles</p>
+          <p class="para-4">Aluminium Bottles</p>
+      </div>
+      <div class="address">
+          <h4 class="h-3">Contact us</h4>
+          <p class="para-4">A-Block 245/7 </p>
+          <p class="para-4">New Town Yelahanka</p>
+          <p class="para-4">Bangalore, India</p>
+
+      </div>
+  </footer>
+</body>
+</html>
